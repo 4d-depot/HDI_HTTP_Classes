@@ -1,11 +1,45 @@
-# No user preferences
+#--------------------------------
+# Ignore invisible files/folders
+#--------------------------------
+.*
+!.git*
+.git/
+
+#--------------------------------
+# Ignore data file
+#--------------------------------
+#[dD][aA][tT][aA]/
+*.journal
+*.4DIndx
+*.Match
+
+#--------------------------------
+# Ignore derived data
+#--------------------------------
+Project/DerivedData/
+
+#--------------------------------
+# Ignore logs
+#--------------------------------
+Logs/
+
+#--------------------------------
+# Ignore settings & preferences
+#--------------------------------
 userPreferences.*/
+Settings/
+#!buildApp.4DSettings
 
-# No Trash
-project/Trash/*
+#--------------------------------
+# Miscellaneous
+#--------------------------------
+*__Orphan__*
+*symbols.txt
+ehthumbs.db
+Thumbs.db
 
-# No deriv data
-project/DerivedData/*
-
-# No logs
-logs/*
+#--------------------------------
+# Added by user
+#--------------------------------
+Resources/php.ini
+Project/Trash/
