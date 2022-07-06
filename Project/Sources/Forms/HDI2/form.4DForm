@@ -1,0 +1,436 @@
+{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 540,
+	"windowMaxHeight": 32000,
+	"width": 960,
+	"height": 640,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 920,
+					"height": 601,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "objTabs",
+					"dataSourceTypeHint": "object",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 80,
+					"left": 80,
+					"width": 800,
+					"height": 480,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"text": "",
+					"top": 139,
+					"left": 74,
+					"width": 806,
+					"height": 435
+				}
+			}
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 53,
+					"left": 41,
+					"width": 867,
+					"height": 80,
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 122,
+					"left": 56,
+					"width": 500,
+					"height": 470,
+					"picture": "/RESOURCES/Images/France.png",
+					"pictureFormat": "scaled"
+				},
+				"Asynchronous loading": {
+					"type": "button",
+					"text": "Asynchronous parallel requests",
+					"top": 322,
+					"left": 616,
+					"width": 251,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Asynchronous loading.4dm",
+					"style": "regular",
+					"fontSize": 14
+				},
+				"Paris": {
+					"type": "picture",
+					"top": 223,
+					"left": 290,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Paris.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Bordeaux": {
+					"type": "picture",
+					"top": 379,
+					"left": 192,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Bordeaux.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Lille": {
+					"type": "picture",
+					"top": 122,
+					"left": 290,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Lille.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Strasbourg": {
+					"type": "picture",
+					"top": 221,
+					"left": 452,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Strasbourg.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Brest": {
+					"type": "picture",
+					"top": 244,
+					"left": 70,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Brest.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Marseilles": {
+					"type": "picture",
+					"top": 456,
+					"left": 382,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Marseilles.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Ajaccio": {
+					"type": "picture",
+					"top": 509,
+					"left": 508,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Ajaccio.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Clermont-ferrand": {
+					"type": "picture",
+					"top": 343,
+					"left": 307,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Clermont-Ferrand.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Perpignan": {
+					"type": "picture",
+					"top": 491,
+					"left": 294,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Perpignan.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Lyon": {
+					"type": "picture",
+					"top": 348,
+					"left": 388,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Lyon.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Nantes": {
+					"type": "picture",
+					"top": 302,
+					"left": 159,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Nantes.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Toulouse": {
+					"type": "picture",
+					"top": 443,
+					"left": 240,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Toulouse.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Orleans": {
+					"type": "picture",
+					"top": 273,
+					"left": 268,
+					"width": 50,
+					"height": 50,
+					"picture": "/RESOURCES/Images/Orleans.png",
+					"pictureFormat": "scaled",
+					"visibility": "hidden"
+				},
+				"Synchronous loading": {
+					"type": "button",
+					"text": "Synchronous requests",
+					"top": 205,
+					"left": 616,
+					"width": 251,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Synchronous loading.4dm",
+					"style": "regular",
+					"fontSize": 14
+				},
+				"Clear": {
+					"type": "button",
+					"text": "Clear weather forecast",
+					"top": 509,
+					"left": 616,
+					"width": 251,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Clear.4dm",
+					"style": "regular",
+					"fontSize": 14
+				},
+				"Asynchronous loading with callbacks": {
+					"type": "button",
+					"text": "Asynchronous loading with callbacks",
+					"top": 416,
+					"left": 616,
+					"width": 251,
+					"height": 25,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Asynchronous loading with callbacks.4dm",
+					"style": "regular",
+					"fontSize": 14
+				},
+				"traceIntoCode": {
+					"type": "checkbox",
+					"text": "Trace into code",
+					"top": 558,
+					"left": 616,
+					"width": 110,
+					"height": 34,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "traceIntoCode",
+					"dataSourceTypeHint": "boolean"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Clear the weather icons to prepare for a new series of requests.",
+					"top": 472,
+					"left": 616,
+					"width": 251,
+					"height": 30
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Perform 26 requests one after the other to retrieve the weather in each French city and then the weather icon. Be careful, it can be extremely slow (a dozen of seconds) depending on the traffic on the REST service.",
+					"top": 122,
+					"left": 616,
+					"width": 251,
+					"height": 75
+				},
+				"Text3": {
+					"type": "text",
+					"text": "Perform all the 13 requests to retrieve the weather in parallel, and when all the responses are received perform 13 other requests for the weather icons.",
+					"top": 254,
+					"left": 616,
+					"width": 245,
+					"height": 60
+				},
+				"Text4": {
+					"type": "text",
+					"text": "Perform all the 13 requests asynchronously using callbacks to retrieve the icons associated.",
+					"top": 376,
+					"left": 616,
+					"width": 251,
+					"height": 30
+				}
+			},
+			"entryOrder": [
+				"information2",
+				"Clear",
+				"Synchronous loading",
+				"Asynchronous loading",
+				"Asynchronous loading with callbacks",
+				"traceIntoCode"
+			]
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 80,
+					"left": 500,
+					"width": 420,
+					"height": 480,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle1": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 40,
+					"width": 440,
+					"height": 480,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information3": {
+					"type": "input",
+					"top": 80,
+					"left": 40,
+					"width": 420,
+					"height": 480,
+					"sizingY": "grow",
+					"dataSource": "Infos[3].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Rectangle2": {
+					"type": "rectangle",
+					"top": 80,
+					"left": 480,
+					"width": 440,
+					"height": 480,
+					"visibility": "hidden",
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"fill": "transparent",
+					"stroke": "#9400D3",
+					"strokeDashArray": "1 1"
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"geometryStamp": 351
+}
